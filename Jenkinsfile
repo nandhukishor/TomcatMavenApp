@@ -14,28 +14,28 @@ pipeline {
         stage('Compile'){
             steps{
                 //add script here to compile the maven project
-                sh '${MAVEN_HOME} clean compile'
+                sh 'mvn clean compile'
             }
         }
         
         stage('Test'){
             steps{
                 //add a step to run the maven tests
-                sh '${MAVEN_HOME} clean test'
+                sh 'mvn clean test'
             }
         }
         
         stage('Package'){
             steps{
                 //add a step to pacakge jar file
-                sh '${MAVEN_HOME} clean package'
+                sh 'mvn clean package'
             }
         }
         
         stage('Publish to Nexus'){
             steps{
                 //add a script to publish jar file into Nexus Repository
-                sh '${MAVEN_HOME} -s ./settings.xml deploy'
+                sh 'mvn -s ./settings.xml deploy'
             }
         }
     }
