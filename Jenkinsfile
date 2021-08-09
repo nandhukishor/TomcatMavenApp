@@ -18,25 +18,5 @@ pipeline {
             }
         }
         
-        stage('Test'){
-            steps{
-                //add a step to run the maven tests
-                sh 'mvn clean test'
-            }
-        }
-        
-        stage('Package'){
-            steps{
-                //add a step to pacakge jar file
-                sh 'mvn clean package'
-            }
-        }
-        
-        stage('Publish to Nexus'){
-            steps{
-                //add a script to publish jar file into Nexus Repository
-                sh 'mvn -s ./settings.xml deploy'
-            }
-        }
     }
 }
