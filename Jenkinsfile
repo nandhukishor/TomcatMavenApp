@@ -38,5 +38,11 @@ pipeline {
                 sh 'mvn -s ./settings.xml deploy'
             }
         }
+         stage('Deploy to Tomcat'){
+            steps{
+                //add a script to publish jar file into Nexus Repository
+                sh 'mvn -s ./settings.xml tomcat7:deploy'
+            }
+        }
     }
 }

@@ -13,5 +13,10 @@
       <username>admin</username>
       <password>password</password>
     </server>
+    <server>
+      <id>tomcat</id>
+      <username>admin</username>
+      <password>admin</password>
+    </server>
   </servers>
 </settings>
