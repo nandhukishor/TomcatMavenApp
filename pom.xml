@@ -4,7 +4,7 @@
 
     <groupId>com.sarav</groupId>
     <artifactId>TomcatMavenApp</artifactId>
-    <version>3.0</version>
+    <version>3.1</version>
     <packaging>war</packaging>
 
     <name>TomcatMavenApp</name>
@@ -86,12 +86,12 @@
     <repository>
       <id>nexus</id>
       <name>Releases</name>
-      <url>http://34.125.20.122:8081/repository/maven-releases</url>
+      <url>http://34.125.210.37:8081/repository/maven-releases</url>
     </repository>
     <snapshotRepository>
       <id>nexus</id>
       <name>Snapshot</name>
-      <url>http://34.125.20.122:8081/repository/maven-snapshots</url>
+      <url>http://34.125.210.37:8081/repository/maven-snapshots</url>
     </snapshotRepository>
   </distributionManagement>
 </project>
