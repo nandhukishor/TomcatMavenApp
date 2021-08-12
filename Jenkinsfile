@@ -32,15 +32,15 @@ pipeline {
             }
         }
         
-        //stage('Publish to Nexus'){
-          //  steps{
-                //add a script to publish jar file into Nexus Repository
-              //  sh 'mvn -s ./settings.xml deploy'
-           // }
-       // }
+        stage('Publish to Nexus'){
+            steps{
+                add a script to publish jar file into Nexus Repository
+                sh 'mvn -s ./settings.xml deploy'
+            }
+        }
          stage('Deploy to Tomcat'){
             steps{
-                //add a script to publish jar file into Nexus Repository
+                //add a script to deploy jar file into Tomcat
                 sh 'mvn -s ./settings.xml tomcat7:deploy'
             }
         }
