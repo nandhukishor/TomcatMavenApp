@@ -12,7 +12,7 @@ pipeline {
         stage('Clone') {
             steps {
                //add script here to clone github repository
-               git branch: 'main',  url: https://github.com/vanireddi/TomcatMavenApp.git
+               git branch: 'master',  url: https://github.com/vanireddi/TomcatMavenApp.git
             }
         }
 
