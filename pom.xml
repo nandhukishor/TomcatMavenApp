@@ -4,7 +4,7 @@
 
     <groupId>com.sarav</groupId>
     <artifactId>TomcatMavenApp</artifactId>
-    <version>3.5-snapshot</version>
+    <version>3.5-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <name>TomcatMavenApp</name>
