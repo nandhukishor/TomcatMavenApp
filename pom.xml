@@ -4,7 +4,7 @@
 
     <groupId>com.sarav</groupId>
     <artifactId>TomcatMavenApp</artifactId>
-    <version>3.5</version>
+    <version>3.5-snapshot</version>
     <packaging>war</packaging>
 
     <name>TomcatMavenApp</name>
@@ -78,7 +78,7 @@
     <url>http://18.118.121.182:8081/manager/text</url>
                     <server>tomcat</server>
 
-    <path>/myworld</path>
+    <path>/my</path>
   </configuration>
 </plugin>
         </plugins>
