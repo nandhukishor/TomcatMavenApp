@@ -34,7 +34,7 @@ pipeline {
         
         stage('Publish to Nexus'){
             steps{
-                add a script to publish jar file into Nexus Repository
+                //add a script to publish jar file into Nexus Repository
                 sh 'mvn -s ./settings.xml deploy'
             }
         }
